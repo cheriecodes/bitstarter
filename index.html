@@ -2,14 +2,14 @@
 <html lang="en"><head>
     <meta charset="utf-8">
     <title>Veeroom</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+    <link href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css" rel="stylesheet">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
+    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800">
     <style type="text/css">
 
             /* Large desktop */
@@ -97,19 +97,19 @@
         }
     </style>
 </head>
-<body style="" cz-shortcut-listen="true">
+<body>
 
 <!-- Mobile-friendly navbar adapted from example. -->
 <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
 <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
         <div class="container">
-            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <button data-target=".nav-collapse" data-toggle="collapse" class="btn btn-navbar" type="button">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#">Veeroom</a>
+            <a href="#" class="brand">Veeroom</a>
             <div class="nav-collapse collapse">
                 <ul class="nav">
                     <li class="active"><a href="#">Home</a></li>
@@ -130,77 +130,88 @@
     <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
     <div class="row-fluid heading">
         <div class="span12">
-            <h1>Veeroom</h1>
+            <h1>Veeroom: Development Version</h1>
         </div>
     </div>
     <div class="row-fluid subheading">
         <div class="span12">
             <!-- Special typography from Bootstrap for lead paragraph. -->
             <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-            <p class="lead">Car reviews by car owners.</p>
+            <p class="lead">Car reviews by car owners, drivers, and passengers.</p>
         </div>
     </div>
     <div class="row-fluid pitch">
         <div class="span5 offset1 video">
-            <img class="img-polaroid" src="http://i.imgur.com/gjKh3dS.jpg">
+            <img src="http://i.imgur.com/gjKh3dS.jpg" alt="Hmm... should I get this car?" class="img-polaroid">
         </div>
 
         <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
         <div class="span5 actions">
-            <div class="span8 offset2">
-                <div class="statistics">
-                    <div class="span4">
-                        <!-- linediv-l and linediv-r give dividing lines that look
-                        different in horizontal and vertical layouts, illustrating
-                        media queries. -->
-                        <div class="linediv-l">
-                            <h3>1000</h3> <p>backers</p>
+            <div class="row-fluid">
+                <div class="span8 offset2">
+                    <div class="row-fluid statistics">
+                        <div class="span4">
+                            <!-- linediv-l and linediv-r give dividing lines that look
+                            different in horizontal and vertical layouts, illustrating
+                            media queries. -->
+                            <div class="linediv-l">
+                                <h3>1000</h3> <p>backers</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="span4">
-                        <div class="linediv-c">
-                            <h3>$10,000</h3> <p>of $30,000</p>
+                        <div class="span4">
+                            <div class="linediv-c">
+                                <h3>$6000</h3> <p>of $30,000</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="span4">
-                        <div class="linediv-r">
-                            <h3>36</h3> <p>days left</p>
+                        <div class="span4">
+                            <div class="linediv-r">
+                                <h3>36</h3> <p>days left</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="span10 offset1">
-                <!-- Bootstrap progress bar -->
-                <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-                <div class="thermometer progress active">
-                    <div class="bar bar-success" style="width: 33%;"></div>
-                    <div class="bar bar-warning" style="width: 67%;"></div>
+                <div class="row-fluid">
+                    <div class="span10 offset1">
+                        <!-- Bootstrap progress bar -->
+                        <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+                        <div class="thermometer progress active">
+                            <div style="width: 33%;" class="bar bar-success"></div>
+                            <div style="width: 67%;" class="bar bar-warning"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="span6 offset3 order">
-                <!-- Standard Bootstrap button. -->
-                <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-                <button class="btn btn-success btn-large">Support</button>
-            </div>
-            <div class="span8 offset2 social">
-                <!-- Social buttons are not included in default Bootstrap. -->
-                <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-                <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-                <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+                <div class="row-fluid">
+                    <div class="span6 offset3 order">
+                        <!-- Standard Bootstrap button. -->
+                        <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+                        <button class="btn btn-success btn-large">Support</button>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span8 offset2 social">
+                        <!-- Social buttons are not included in default Bootstrap. -->
+                        <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+                        <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+                        <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
+    <!-- Beyond this part the marketing copy begins. -->
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+    <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+    <!-- http://placehold.it -->
     <div class="row-fluid section1">
         <div class="span5 offset1 asset">
-            <img class="img-polaroid" src="http://limitless-forest-1430.herokuapp.com/assets/img/vr-cars.jpg">
+            <img src="http://limitless-forest-1430.herokuapp.com/assets/img/vr-cars.jpg" alt="cars cars cars!" class="img-polaroid">
         </div>
         <div class="span5 copy">
             <p>
-                Veeroom provides the platform for car owners to talk
-                about their new, used, or old cars.
-                Car buyers can also find out more about the cars they're
-                interested in before purchasing.
+                What is <i>that</i> car's overall performance after 5000 miles? 10,000 miles?
+                50,000 miles? 100,000 miles? Satisfied? Mediocre? Disappointed?
+                Find out here on Veeroom!
             </p>
         </div>
     </div>
@@ -208,26 +219,32 @@
     <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
             <p>
-                Ratings on the car's overall performance after 5000 miles? 10,000 miles?
-                50,000 miles? 100,000 miles? Satisfied? Mediocre? Frustrated? Voice your opinions here.
+                Veeroom provides the platform for car owners to talk
+                about their new, used, or old cars. We also welcome those
+                who have first hand experience driving and/or riding the car
+                for their valuable feedback. Car buyers can also find out more
+                about the cars they're interested in before purchasing.
             </p>
         </div>
         <div class="span5 asset">
-            <img class="img-polaroid" src="http://i.imgur.com/ELsa330.jpg">
+            <img src="http://i.imgur.com/ELsa330.jpg" alt="vroom vroom" class="img-polaroid">
         </div>
     </div>
 
+    <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+    <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+    <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
     <div class="row-fluid faq">
         <div class="span10 offset1">
             <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
+            <div id="accordion2" class="accordion">
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                        <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
                             How did Veeroom get its name?
                         </a>
                     </div>
-                    <div id="collapseOne" class="accordion-body collapse">
+                    <div class="accordion-body collapse" id="collapseOne">
                         <div class="accordion-inner">
                             a "room" to talk about "vehicles".
                         </div>
@@ -235,13 +252,13 @@
                 </div>
                 <div class="accordion-group">
                     <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                            When will Veeroom open to public?
+                        <a href="#collapseTwo" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                            Do I have to pay to join Veeroom?
                         </a>
                     </div>
-                    <div id="collapseTwo" class="accordion-body collapse">
+                    <div class="accordion-body collapse" id="collapseTwo">
                         <div class="accordion-inner">
-                            As soon as we reach optimal funding goal, we will release the alpha version.
+                            No, Veeroom is a free platform for anyone to join.
                         </div>
                     </div>
                 </div>
